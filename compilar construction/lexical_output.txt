@@ -1,0 +1,62 @@
+TOKENS:
+----------------------------------------
+Token                Lexeme          Line No   
+----------------------------------------
+int                  KEYWORD         5         
+main                 KEYWORD         5         
+(                    DELIMITER       5         
+)                    DELIMITER       5         
+{                    DELIMITER       5         
+int                  KEYWORD         6         
+count                ID              6         
+=                    OPERATOR        6         
+100                  INT_CONST       6         
+;                    DELIMITER       6         
+string               ID              7         
+message              ID              7         
+=                    OPERATOR        7         
+"Hello World!"       STRING_CONST    7         
+;                    DELIMITER       7         
+char                 KEYWORD         8         
+grade                ID              8         
+=                    OPERATOR        8         
+'A'                  CHAR_CONST      8         
+;                    DELIMITER       8         
+if                   KEYWORD         10        
+(                    DELIMITER       10        
+count                ID              10        
+=                    OPERATOR        10        
+10                   INT_CONST       10        
+)                    DELIMITER       10        
+{                    DELIMITER       10        
+count                ID              12        
+=                    OPERATOR        12        
+count                ID              12        
++                    OPERATOR        12        
+1                    INT_CONST       12        
+;                    DELIMITER       12        
+}                    DELIMITER       13        
+string               ID              16        
+bad_str              ID              16        
+=                    OPERATOR        16        
+char                 KEYWORD         17        
+bad_char             ID              17        
+=                    OPERATOR        17        
+too_long             ID              17        
+;                    DELIMITER       17        
+int                  KEYWORD         18        
+invalid_             ID              18        
+#                    PREPROCESSOR    18        
+symbol               ID              18        
+=                    OPERATOR        18        
+5                    INT_CONST       18        
+;                    DELIMITER       18        
+}                    DELIMITER       19        
+
+========================================
+ERRORS:
+----------------------------------------
+Line 21: Un-terminated comment
+Line 16: String constant exceeded line
+Line 17: Invalid character constant
+Line 17: Invalid character constant
